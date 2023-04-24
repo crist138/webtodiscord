@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asd</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="form">
+            <h2 id="title">Integracion web con discord</h2>
+            <form action="/formulario" method="post" enctype="multipart/form-data">
+                <h2>Correo: <input type="email" name="correo" id="correo" placeholder="Correo electronico" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></h2>
+                <h2>Mensaje: <input type="text" name="mensaje" id="mensaje" placeholder="Deja tu mensaje"></h2>
+                <div class="button-container">
+                    <h2>Adjuntar Imagen: <input type="file" name="imagen"></h2>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
